@@ -2,27 +2,36 @@
 Recipe API project
 
 ## Build with Dockerfile
-
 ```bash
-sudo docker build --network=host .
+make d-build
+```
+
+## Build with Dockerfile (Linux)
+```bash
+make d-build-linux
 ```
 
 ## Build with Docker Compose
 ```bash
-sudo docker-compose build
-```
-
-## Run Command
-```bash
-sudo docker-compose run --rm app sh -c ""
+make dc-build
 ```
 
 ## Run flake8
 ```bash
-sudo docker-compose run --rm app sh -c "flake8"
+make flake8
+```
+
+## Run tests
+```bash
+make test
 ```
 
 ## Run Project
 ```bash
-sudo docker-compose up
+make run
+```
+
+## Run Commands with Docker
+```bash
+sudo docker-compose run --rm app sh -c ""
 ```
