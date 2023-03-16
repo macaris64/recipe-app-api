@@ -31,7 +31,13 @@ make test
 make run
 ```
 
+## Kill Container
+```bash
+make kill 
+```
+
 ## Run Commands with Docker
 ```bash
 sudo docker-compose run --rm app sh -c ""
 ```
+

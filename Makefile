@@ -15,3 +15,6 @@ test:
 
 run:
 	docker-compose up
+
+kill:
+	docker-compose down
