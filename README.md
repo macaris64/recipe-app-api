@@ -36,8 +36,18 @@ make run
 make kill 
 ```
 
+## Make migrations
+```bash
+make migrations 
+```
+
+## Migrate
+```bash
+make migrate 
+```
+
+
 ## Run Commands with Docker
 ```bash
 sudo docker-compose run --rm app sh -c ""
 ```
-
