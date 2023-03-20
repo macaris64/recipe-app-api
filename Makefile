@@ -8,7 +8,7 @@ dc-build:
 	docker-compose build
 
 flake8:
-	docker-compose run --rm app sh -c "flake8"
+	docker-compose run --rm app sh -c "flake8" && docker-compose run --rm app sh -c "python ./helpers/flake8_autofix.py"
 
 test:
 	docker-compose run --rm app sh -c "python manage.py test"
