@@ -87,7 +87,10 @@ class PrivateIngredientsApiTests(TestCase):
         self.assertEqual(ingredient.name, payload['name'])
 
     def test_delete_ingredient(self):
-        ingredient = Ingredient.objects.create(user=self.user, name='Ingredient 10')
+        ingredient = Ingredient.objects.create(
+            user=self.user,
+            name='Ingredient 10'
+        )
 
         url = detail_url(ingredient.id)
         res = self.client.delete(url)
