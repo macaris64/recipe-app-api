@@ -41,11 +41,10 @@ make kill
 make migrations 
 ```
 
-## Migrate
+## Migrate
 ```bash
 make migrate 
 ```
-
 
 ## Run Commands with Docker
 ```bash
